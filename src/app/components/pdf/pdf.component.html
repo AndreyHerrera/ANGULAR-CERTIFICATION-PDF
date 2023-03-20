@@ -1,0 +1,46 @@
+<div style="background-color: #161853; min-height: calc(100vh - 70px - 80px);" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-3"></div>
+
+      <div class="col-sm-12 col-md-4 col-lg-6">
+        <div class="card card-body m-2" style="background-color: #121212; color: white;">
+          <h1 class="text-center">GENERADOR DE PDF</h1>
+
+          <form [formGroup]="formGroup" (ngSubmit)="onSubmitForm()">
+            <label for="nombreEmpleado">NOMBRE Y APELLIDO DEL EMPLEADO:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-user"></i></span>
+                <input id="nombreEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="nombreEmpleado">
+            </div>
+            <label for="cedulaEmpleado">CEDULA DEL EMPLEADO:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-id-badge"></i></span>
+                <input id="cedulaEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="cedulaEmpleado">
+            </div>
+            <label for="salarioEmpleado">SALARIO DEL EMPLEADO:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-dollar-sign"></i></span>
+                <input id="salarioEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="salarioEmpleado">
+            </div>
+            <label for="fechaInicioEmpleado">FECHA DE INICIO DEL EMPLEADO:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-calendar-days"></i></span>
+                <input id="fechaInicioEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaInicioEmpleado">
+            </div>
+            <label for="fechaFinEmpleado">FECHA DE FIN DEL EMPLEADO:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-calendar-days"></i></span>
+                <input id="fechaFinEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaFinEmpleado">
+            </div>
+            <div class="d-grid text-center py-3">
+              <button type="submit" class="btn btn-primary btn-lg" [disabled]="formGroup.invalid">GENERAR PDF</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3"></div>
+    </div>
+  </div>
+</div>
