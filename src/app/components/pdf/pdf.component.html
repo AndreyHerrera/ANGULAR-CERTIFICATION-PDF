@@ -26,12 +26,12 @@
             <label for="fechaInicioEmpleado">FECHA DE INICIO DEL EMPLEADO:</label>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-calendar-days"></i></span>
-                <input id="fechaInicioEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaInicioEmpleado">
+                <input id="fechaInicioEmpleado" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaInicioEmpleado">
             </div>
             <label for="fechaFinEmpleado">FECHA DE FIN DEL EMPLEADO:</label>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-calendar-days"></i></span>
-                <input id="fechaFinEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaFinEmpleado">
+                <input id="fechaFinEmpleado" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaFinEmpleado">
             </div>
             <div class="d-grid text-center py-3">
               <button type="submit" class="btn btn-primary btn-lg" [disabled]="formGroup.invalid">GENERAR CERTIFICADO</button>

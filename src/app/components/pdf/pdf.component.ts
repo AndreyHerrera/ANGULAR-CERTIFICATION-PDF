@@ -39,6 +39,7 @@ export class PdfComponent implements OnInit {
       fechaInicioEmpleado: this.formGroup.value.fechaInicioEmpleado,
       fechaFinEmpleado: this.formGroup.value.fechaFinEmpleado
       }
+      console.log(pdfRequest.fechaInicioEmpleado);
       this.PdfService.generatePdf(pdfRequest).subscribe((data: any) => {
         this.blob = new Blob([data], {type: 'application/pdf'});
         const downloadUrl = window.URL.createObjectURL(data);
