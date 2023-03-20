@@ -5,7 +5,7 @@
 
       <div class="col-sm-12 col-md-4 col-lg-6">
         <div class="card card-body m-2" style="background-color: #121212; color: white;">
-          <h1 class="text-center">GENERADOR DE PDF</h1>
+          <h1 class="text-center">CERTIFICADO LABORAL PDF</h1>
 
           <form [formGroup]="formGroup" (ngSubmit)="onSubmitForm()">
             <label for="nombreEmpleado">NOMBRE Y APELLIDO DEL EMPLEADO:</label>
@@ -34,7 +34,7 @@
                 <input id="fechaFinEmpleado" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" formControlName="fechaFinEmpleado">
             </div>
             <div class="d-grid text-center py-3">
-              <button type="submit" class="btn btn-primary btn-lg" [disabled]="formGroup.invalid">GENERAR PDF</button>
+              <button type="submit" class="btn btn-primary btn-lg" [disabled]="formGroup.invalid">GENERAR CERTIFICADO</button>
             </div>
           </form>
         </div>
